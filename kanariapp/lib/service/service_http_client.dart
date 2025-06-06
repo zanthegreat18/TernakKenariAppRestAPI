@@ -86,7 +86,7 @@ class ServiceHttpClient {
   }
 
   //delete
-  Future<http.Response> delete(String endpoint) async {
+ Future<http.Response> delete(String endpoint) async {
     final url = Uri.parse('$baseUrl/$endpoint');
     try {
       final response = await http.delete(url);
